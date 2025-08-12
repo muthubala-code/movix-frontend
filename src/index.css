@@ -1,0 +1,77 @@
+/* google fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* css variables */
+
+:root {
+  /* colors */
+
+  --color-blue: #8166ff;
+  --color-blue-dark: #00031c;
+  --color-blue-light: #161934;
+  --color-white: rgb(250, 249, 249);
+  --color-black: rgb(0, 0, 0);
+  --color-light-white: rgb(188, 188, 188);
+  --color-linear: linear-gradient(to right, #7a58ff, #6f42c1);
+
+  /* fonts */
+
+  --font-inter: "Inter", sans-serif;
+  --font-popins: "Poppins", sans-serif;
+  --font-large: 2.5rem;
+  --font-mid: 1.5rem;
+  --font-small: 1rem;
+
+  /* others */
+
+  --base--pading: 0rem 8rem;
+}
+
+/* html and body tag */
+
+html {
+  scroll-behavior: smooth;
+  font-size: 10px;
+  background: var(--color-blue-dark);
+}
+
+body {
+  height: auto;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+/* css reseting */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: var(--font-mid);
+  font-family: var(--font-popins);
+  color: var(--color-white);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+video {
+  object-fit: cover;
+}
+
+#root {
+  height: auto;
+  width: 100vw;
+}
+
+.icon {
+  font-size: var(--font-large);
+  cursor: pointer;
+}
