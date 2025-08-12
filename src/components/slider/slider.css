@@ -1,0 +1,105 @@
+/* Ensures full-screen swiper and slide */
+.swiper,
+.swiper-slide,
+.video-wrapper {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Container for the video and content */
+.video-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 8rem 2rem 5rem 2rem;
+  width: 100vw;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  /* background-color: rgba(0, 0, 0, 0.984); */
+}
+
+/* Full-screen background video */
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 1000;
+  opacity: 0.4;
+  /* background-color: rgba(0, 0, 0, 0.984); */
+  background-size: cover;
+  transform: scale(1.2);
+}
+
+/* Text/content overlay */
+.overlay {
+  position: relative;
+  z-index: 2;
+  color: white;
+  height: 100%;
+  width: 100%;
+  padding: var(--base--pading);
+  font-size: var(--font-mid);
+  display: flex;
+  align-items: end;
+  justify-content: start;
+}
+.content {
+  height: 50%;
+}
+.content .genre {
+  color: var(--color-blue);
+  font-weight: bold;
+  font-size: 2rem !important;
+  margin: 1.5rem 0;
+}
+
+.content .title {
+  font-size: 5rem;
+}
+
+.content .tag {
+  margin-bottom: 1.5rem !important;
+}
+
+.content .desc {
+  font-size: var(--font-mid) !important;
+  text-align: justify !important;
+  margin: 1.5rem 0;
+}
+
+/* Buttons and content styling */
+.buttons {
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.slider-btn {
+  flex: 1;
+  padding: 0.8rem 1.5rem !important;
+  font-size: var(--font-mid) !important;
+  background: inherit !important;
+  font-size: 1rem;
+  border-radius: 5px;
+  color: white !important;
+  border: none !important;
+  outline: none !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer !important;
+  gap: 2rem;
+}
+
+.buttons .slider-btn:first-child {
+  background: var(--color-linear) !important;
+}

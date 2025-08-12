@@ -1,0 +1,144 @@
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-box {
+  height: auto;
+  width: 30%;
+  /* background: white; */
+  padding: 1rem 5rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.8rem 2.4rem rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: var(--color-white);
+  border: 2px solid var(--color-blue);
+}
+
+.form-box .logo img {
+  height: 5rem;
+  width: 5rem;
+  object-fit: contain;
+}
+
+h2 {
+  margin-bottom: 0.8rem;
+  font-size: var(--font-large);
+  font-weight: 600;
+  color: var(--color-white);
+}
+
+.btn {
+  width: 100%;
+  padding: 1.2rem;
+  margin: 1rem 0;
+  border-radius: 0.6rem;
+  font-size: var(--font-mid);
+  cursor: pointer;
+  background-color: var(--color-white);
+  border: 1px solid #ddd;
+  color: var(--color-black);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn img {
+  height: 2rem;
+  width: 5%;
+  object-fit: contain;
+}
+
+.btn span {
+  width: 95%;
+  color: var(--color-black);
+}
+.divider {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+  color: #aaa;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #ddd;
+  margin: 0 0.5rem;
+}
+
+.divider span {
+ color: var(--color-white) ;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 1.2rem;
+  margin: 1rem 0;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: var(--font-mid);
+  color: var(--color-black);
+  outline: none;
+}
+
+input:focus {
+  border-color: var(--color-blue);
+}
+
+.options {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.options label {
+  color: var(--color-white) ;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.options a {
+  font-size: var(--font-mid);
+  color: var(--color-blue);
+}
+
+.options a:hover {
+  text-decoration: underline;
+}
+
+.sign-in {
+  background: var(--color-linear);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.terms {
+  font-size: var(--font-mid);
+  color: #888;
+}
+
+.terms a {
+  color: #7a58ff;
+  text-decoration: none;
+}
+
+.terms span {
+  color: var(--color-white) ;
+}
+
+.error {
+  color: red !important ;
+}

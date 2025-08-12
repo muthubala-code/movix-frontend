@@ -1,0 +1,38 @@
+.navbar-left {
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-left .logo {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 35%;
+}
+
+.nav-bar .logo img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.navbar-left .navbar-links-container {
+  display: flex;
+  width: 60%;
+}
+
+.navbar-links-container .navbar-links {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  transition: all 0.1s linear;
+}
+
+.navbar-links a:hover {
+  color: var(--color-blue);
+  transition: all 0.1s linear;
+}
