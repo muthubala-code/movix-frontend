@@ -10,12 +10,24 @@
   align-items: center;
   justify-content: start;
   width: 35%;
+  gap: .5rem;
 }
 
 .nav-bar .logo img {
-  height: 100%;
-  width: 100%;
+  height: 5rem;
+  width: 5rem;
   object-fit: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-bar .logo h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  margin: 0;
 }
 
 .navbar-left .navbar-links-container {
