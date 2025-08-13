@@ -51,7 +51,7 @@ const Signin = () => {
     try {
       const result = await dispatch(login(userData)).unwrap();
       navigate("/");
-      await toast.success(result.message);
+      toast.success(result.message);
     } catch (err) {
       if (err.errors) {
         const apiErrors = err.errors.reduce((acc, item) => {
